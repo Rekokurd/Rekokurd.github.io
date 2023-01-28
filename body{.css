@@ -14,8 +14,11 @@ body{
     margin-right: auto;
     margin-top: 10px;
     border-radius: 20px;
+    display: -ms-grid ;
     display: grid ;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     justify-items: center;
 }
 h4{
@@ -29,9 +32,14 @@ h4{
     position: relative;
     width: 300px;
     height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    justify-self: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
 }
 #dolaramrolabel{
     color: var(--desktopBackground);
@@ -44,14 +52,20 @@ h4{
     text-align: center;
 }
 #second{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 10px;
     height: 20px;
     width: 200px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 #dolarlabel{
     color: var(--desktopBackground);
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
 }
 #dolarinput{
@@ -62,11 +76,15 @@ h4{
     text-align: center;
 }
 #third{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 10px;
     height: 20px;
     width: 200px;
-    justify-content: center; 
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
 }
 #dinnarinput{
     position: relative;
@@ -81,6 +99,8 @@ h4{
 #final{
     margin-top: 10px;
     width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 #anjambtn{
@@ -93,13 +113,15 @@ h4{
     color: aliceblue;
     margin-left: auto;
     margin-top: 6px;
-    box-shadow: 0px 0px 20px 2px rgb(8, 8, 67);
+    -webkit-box-shadow: 0px 0px 20px 2px rgb(8, 8, 67);
+            box-shadow: 0px 0px 20px 2px rgb(8, 8, 67);
     border-radius:10px ;
 }
 #anjambtn:hover{
     color: rgb(23, 1, 1);
     background: rgb(95, 102, 226);
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 #here{
     color: var(--desktopBackground);
@@ -117,7 +139,9 @@ ul{
 i{
     color: red;
     margin-left: auto;
-    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+            transform: translateY(20px);
     scale: 1.2;
 }
 @media only screen and (max-width : 600px) {
@@ -134,8 +158,11 @@ i{
         margin-right: auto;
         margin-top: 10px;
         border-radius: 20px;
+        display: -ms-grid ;
         display: grid ;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         justify-items: center;
     }
     h4{
@@ -148,8 +175,12 @@ i{
         position: relative;
         width: 300px;
         height: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     #dolaramro{
         position: relative;
@@ -159,14 +190,20 @@ i{
         text-align: center;
     }
     #second{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-top: 10px;
         height: 20px;
         width: 200px;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
     #dolarlabel{
         color: var(--desktopBackground);
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
         width: fit-content;
     }
     #dolarinput{
@@ -177,11 +214,15 @@ i{
         text-align: center;
     }
     #third{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         margin-top: 10px;
         height: 20px;
         width: 200px;
-        justify-content: center; 
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center; 
     }
     #dinnarinput{
         position: relative;
