@@ -25,13 +25,13 @@ h4{
     color: black;
     border-bottom: 1px solid;
     border-color: var(--desktopBackground);
-    height: 20px;
+    min-height: 20px;
     text-align: center;
 }
 #first{
     position: relative;
     width: 300px;
-    height: 20px;
+    min-height: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -56,7 +56,7 @@ h4{
     display: -ms-flexbox;
     display: flex;
     margin-top: 10px;
-    height: 20px;
+    min-height: 20px;
     width: 200px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -80,7 +80,7 @@ h4{
     display: -ms-flexbox;
     display: flex;
     margin-top: 10px;
-    height: 20px;
+    min-height: 20px;
     width: 200px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -105,7 +105,7 @@ h4{
 }
 #anjambtn{
     color: red;
-    height: 40px;
+    min-height: 40px;
     width: 50px;
     font-size: 20px;
     border: none;
@@ -168,13 +168,13 @@ i{
     h4{
         color: black;
         border-bottom: 1px solid red;
-        height: 20px;
+        min-height: 20px;
         text-align: center;
     }
     #first{
         position: relative;
         width: 300px;
-        height: 20px;
+        min-height: 20px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -194,7 +194,7 @@ i{
         display: -ms-flexbox;
         display: flex;
         margin-top: 10px;
-        height: 20px;
+        min-height: 20px;
         width: 200px;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
@@ -218,7 +218,7 @@ i{
         display: -ms-flexbox;
         display: flex;
         margin-top: 10px;
-        height: 20px;
+        min-height: 20px;
         width: 200px;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
