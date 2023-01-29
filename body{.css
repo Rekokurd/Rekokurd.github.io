@@ -104,8 +104,8 @@ h4{
 }
 #anjambtn{
     color: red;
-    height: 40px;
-    width: 50px;
+    min-height: 40px;
+    width: 60px;
     font-size: 20px;
     border: none;
     background-color: var(--desktopBackground);
