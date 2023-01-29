@@ -1,323 +1,42 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 minimum-scale=1 maximum-scale=1">
-    <title>exchanging</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minumum-scale=1">
+    <title>Document</title>
     <script src="https://kit.fontawesome.com/ba65ccb96e.js" crossorigin="anonymous"></script>
-    <style>
-
-        :root{
-    --item_color: rgb(76, 149, 174);
-    --background:rgb(30, 123, 154);
-}
-body{
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
-    background-color: rgb(5, 43, 56);
-}
-main{
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-}
-#dolartodinner{
-    background: var(--item_color);
-    margin-left: auto;
-    margin-right:auto;
-    position: relative;
-    min-height: 300px;
-    max-width: 400px;
-    display: block;
-    border-radius: 20px;
-    -webkit-box-shadow: 3px 20px 60px 1px rgb(4, 3, 6);
-            box-shadow: 3px 20px 60px 1px rgb(4, 3, 6);
-    -webkit-transition: 0.5s;
-    -o-transition: 0.5s;
-    transition: 0.5s;
-}
-#dolartodinner:hover{
-    scale: 1.05;
-}
-#top{
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: 2px solid white;
-    color: aliceblue;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-}
-#dolaramrolabel{
-    margin-left: 130px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    position: absolute;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    color: white;
-    font-size: 18px;
-    width: fit-content;
-}
-#dolaramro{
-    border: 4px solid rgb(13, 1, 1);
-    text-align: center;
-    border-radius: 20px;
-    color: var(--item_color);
-    width: 100px;
-    position: relative;
-    resize: none;
-}
-#dolaramro::-webkit-input-placeholder{
-    opacity: 0.7;
-}
-#dolaramro::-moz-placeholder{
-    opacity: 0.7;
-}
-#dolaramro:-ms-input-placeholder{
-    opacity: 0.7;
-}
-#dolaramro::-ms-input-placeholder{
-    opacity: 0.7;
-}
-#dolaramro::placeholder{
-    opacity: 0.7;
-}
-#dolaramro:focus{
-    outline: none;
-}
-#dolaramro::-webkit-inner-spin-button, 
-  #dolaramro::-webkit-outer-spin-button { 
-    -webkit-appearance: none; 
-    margin: 0; 
-  }
-  #here{
-    color: rgb(37, 9, 78);
-    top: 180px;
-    position: absolute;
-    text-align: center;
-    width: 100px;
-    height: 20px;
-    border: 1px solid white;
-    z-index: 6;
-    left: 80px;
-    font-size: 20px;
-  }
-#dolarlabel{
-    margin-left: 100px;
-    position: relative;
-    color: white;
-    font-size: 18px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-}
-#dolarinput{
-    border: 4px solid rgb(13, 1, 1);
-    text-align: center;
-    margin-left: 60px;
-    border-radius: 20px;
-    color: var(--item_color);
-    width: 100px;
-    position: relative;
-    resize: none;
-}
-#dolarinput::-webkit-inner-spin-button, 
-  #dolaramro::-webkit-outer-spin-button { 
-    -webkit-appearance: none; 
-    margin: 0; 
-  }
-  #dolarinput:focus{
-    outline: none;
-}
-#dinnarlabel{
-    position: relative;
-    left: 100px;
-    color: white;
-    font-size: 18px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-}
-#dinnarinput{
-    border: 4px solid rgb(13, 1, 1);
-    text-align: center;
-    margin-left: 60px;
-    border-radius: 20px;
-    color: var(--item_color);
-    width: 100px;
-    position: relative;
-    resize: none;
-}
-#dinnarinput::-webkit-inner-spin-button, 
-  #dolaramro::-webkit-outer-spin-button { 
-    -webkit-appearance: none; 
-    margin: 0; 
-  }
-  #dinnarinput:focus{
-    outline: none;
-}
-#anjambtn{
-    position: relative;
-    left: 100px;
-    color: white;
-    font-size: 18px;
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-    border-radius: 15px;
-    background: rgb(2, 31, 26);
-    border: 1px solid rgb(0, 229, 255);
-    cursor: pointer;
-    -webkit-transition: 0.1s;
-    -o-transition: 0.1s;
-    transition: 0.1s;
-    -webkit-animation: anjam 2s linear infinite;
-            animation: anjam 2s linear infinite;
-}
-#anjambtn:hover{
-    scale: 1.2;
-    -webkit-animation-play-state: paused;
-            animation-play-state: paused;
-    color: red;
-    background: white;
-}
-@-webkit-keyframes anjam{
-    0%{background: black;}
-    50%{background: rgb(59, 50, 50); }
-    100%{background: black; }
-}
-@keyframes anjam{
-    0%{background: black;}
-    50%{background: rgb(59, 50, 50); }
-    100%{background: black; }
-}
-#icon{
-    color: rgb(252, 251, 251);
-    position: relative;
-    scale: 1.3;
-    -webkit-animation: icone 1s infinite ;
-            animation: icone 1s infinite ;
-    left: 260px;
-    top: 35px;
-}
-@-webkit-keyframes icone{
- 0%{scale: 1;}
- 50%{scale: 1.4;}
- 100%{scale: 1;}
-}
-@keyframes icone{
- 0%{scale: 1;}
- 50%{scale: 1.4;}
- 100%{scale: 1;}
-}
-ul{
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: quto;
-    list-style-type: none;
-    border-top: 1px solid red;
-    position: relative;
-    left: -20px;
-    top: 20px;
-}
-li{
-    direction: rtl;
-    position: relative;
-}
-
-
-
-
-@media only screen and (max-width: 600px) {
-   main{
-    display: block;
-   }
-   #dolaramrolabel{
-    left: 40px;
-   }
-   #dolaramro{
-    left: 40px;
-    margin-bottom: 10px;
-   }
-   #dolarinput{
-    margin-bottom: 10px;
-   }
-   #dinnarinput{
-    margin-bottom: 10px;
-   }
-   #here{
-    top: 220px;
-   }
-   #icon{
-    left: 330px;
-   }
-   ul{
-    left: 30px;
-    top: 6px;
-   }
-   #dolartodinner{
-    width: 350px;
-       min-height:350px;
-   }
-    }
-    </style>
+    <link rel="stylesheet" href="/body{.css">
+   
 </head>
 <body>
     <main>
-        <div id="dolartodinner">
-            <p id="top"> dollar and dinner</p>
-            <label for="dolaramro" id="dolaramrolabel">نرخی ١٠٠ دۆلار بە دینار</label>
-            <input type="number" id="dolaramro" placeholder="148000" min="250" >
-            <br>
-            <label for="dolarinput" id="dolarlabel">دۆلار</label>
-            <br>
-            <input type="number" id="dolarinput">
-            <br>
-            <label for="dinnarinput" id="dinnarlabel">دینار</label>
-            <br>
-            <input type="number" id="dinnarinput">
-            <br>
-            <input id="anjambtn" type="button" value="ئەنجام" onclick="anjam()">
-            <p id="here"></p>
-            <br>
-            <i id="icon" class="fa-solid fa-triangle-exclamation"></i>
-            
+        <div id="background">
+            <h4>dolar ti Iq dinar</h4>
+            <div id="first">
+                <input type="number" id="dolaramro" placeholder="148000" min="250" >
+                <label for="dolaramro" id="dolaramrolabel">نرخی ١٠٠ دۆلار بە دینار</label>
+            </div>
+            <div id="second">
+                <input type="number" id="dolarinput">
+                <label for="dolarinput" id="dolarlabel">دۆلار</label>
+            </div>
+            <div id="third">
+                <input type="number" id="dinnarinput">
+                <label for="dinnarinput" id="dinnarlabel">دینار</label>
+            </div>
+            <div id="final">
+                <p id="here"></p>
+                <input id="anjambtn" type="button" value="ئەنجام" onclick="anjam()">
+                 
+            </div>
+            <i class="fa-sharp fa-solid fa-triangle-exclamation"></i>
             <ul>
-                <li> 1-بە ژمارەی ئینگلیزی بنوسە بەم شێوەیە 1234</li>
-                <li> 2- هیچ هێماو نیشانەیەک بەکار مەهێنە وەک$</li>
+                <li>بە ژمارەی ئینگلیزی بنوسە بەم شێوەیە 1234</li>
+                <li> هیچ هێماو نیشانەیەک بەکار مەهێنە وەک$</li>
             </ul>
         </div>
     </main>
-    <a href="/page two.html"> <button> hi</button></a>
 </body>
-<script >
-    
-
-function anjam(){
-    let nrxiAmro=document.getElementById('dolaramro').value
-    let dolar=document.getElementById('dolarinput').value
-    let dinnar=document.getElementById('dinnarinput').value
-    let dolardabash=nrxiAmro/100;
-    if (!isNaN(parseFloat(nrxiAmro))) {
-      if (!isNaN(parseFloat(dolar))) {
-        document.getElementById("here").innerHTML="دینار"+dolardabash*dolar
-      }
-      else if(!isNaN(parseFloat(dinnar))) {
-        document.getElementById('here').innerHTML= dinnar*100/nrxiAmro+'$'
-      } 
-      
-    
-    }
-}
-
-
-</script>
+<script src="/main.js"></script>
 </html>
