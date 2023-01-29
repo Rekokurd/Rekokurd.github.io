@@ -145,9 +145,9 @@ i{
     animation: ico 1s infinite;
 }
 @keyframes ico{
-    0%{ scale: 1;}
-    50%{scale: 1.2;}
-    100%{scale:1;}
+    0%{ scale: 1.2;}
+    50%{scale: 1.4;}
+    100%{scale:1.2;}
 }
 @media only screen and (max-width : 600px) {
     body{
