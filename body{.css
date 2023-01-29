@@ -126,6 +126,7 @@ h4{
 #here{
     color: var(--desktopBackground);
     border: 1px solid rgb(38, 17, 99);
+    min-height: 30px;
     width: 100px;
     overflow: hidden;
     font-size: 13px;
