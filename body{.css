@@ -137,6 +137,7 @@ ul{
     display: block;
     color: red;
     border: 1px solid red;
+    border-radius:6px;
 }
 i{
     color: red;
