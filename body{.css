@@ -154,6 +154,10 @@ i{
     50%{scale: 1.4;}
     100%{scale:1.2;}
 }
+h2{
+    color:black;
+    text-align:center;
+}
 
 @media only screen and (max-width : 600px) {
     body{
