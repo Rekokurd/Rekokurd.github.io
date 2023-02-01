@@ -144,6 +144,8 @@ i{
             transform: translateY(20px);
     scale: 1.2;
     animation: ico 1s infinite;
+    position:relative ;
+    margin-bottom:20px;
 }
 @keyframes ico{
     0%{ scale: 1.2;}
@@ -154,7 +156,11 @@ h2{
     color:black;
     text-align:center;
 }
-
+#bottomnext{
+    margin:0 auto;
+    hight:20px;
+    width:40px;
+}
 @media only screen and (max-width : 600px) {
     body{
         margin: 0%;
