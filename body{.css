@@ -5,6 +5,7 @@
 body{
     display: block;
     background: var(--desktopBackground);
+    justfy-content:center;
 }
 #background{
     color: rgb(244, 241, 241);
