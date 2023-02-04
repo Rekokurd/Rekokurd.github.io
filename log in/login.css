@@ -1,0 +1,71 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+}
+#loginform{
+    position: relative;
+    border: 1px solid red;
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto 0 auto;
+}
+#loginp{
+    border: 1px solid pink;
+    width: 100%;
+    text-align: center;
+    margin: 12px auto 0 auto;
+}
+#usernamelabel{
+    position: relative;
+    border: 1px solid green;
+    width: fit-content;
+    margin: 20px auto 0 auto;
+}
+#usernameinpt{
+    position: relative;
+    width: 150px;
+    margin: 10px auto 0 auto;
+}
+#passwordlabel{
+    position: relative;
+    width: fit-content;
+    border: 1px solid red;
+    margin: 20px auto 0 auto;
+}
+#passwordinpt{
+    width: 150px;
+    margin: 10px auto 0 auto;
+}
+#loginbtn{
+    position: relative;
+    width: 150px;
+    margin:6px auto 0 auto ;
+}
+#border{
+    width: 200px;
+    background: red;
+    height: 1px;
+    margin: 20px auto 0 auto;
+    position: relative;
+}
+#or{
+    text-align: center;
+    margin: 0% auto 0px auto;
+    width: 20px;
+    background-color: rgb(247, 244, 244);
+    position: relative;
+    top: -9px;
+}
+#signinbtn{
+    width: 150px;
+    margin: 0 auto 0 auto;
+}
+#forget{
+    font-size: 14px;
+    position: relative;
+    margin: 40px auto 0 auto;
+    
+}

@@ -1,9 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
 
 
 :root{
@@ -12,6 +6,7 @@
 body{
     display: block;
     background: var(--desktopBackground);
+    justfy-content:center;
 }
 #background{
     color: rgb(244, 241, 241);
@@ -34,7 +29,9 @@ h4{
     border-bottom: 1px solid;
     border-color: var(--desktopBackground);
     height: 20px;
+    margin:0 auto 10px auto;
     text-align: center;
+    
 }
 #first{
     position: relative;
@@ -137,20 +134,35 @@ ul{
     list-style-type:decimal;
     display: block;
     color: red;
+    border: 1px solid red;
+    border-radius:6px;
+    text-align:right;
 }
 i{
     color: red;
     margin-left: auto;
+    margin-right:auto;
     -webkit-transform: translateY(20px);
         -ms-transform: translateY(20px);
             transform: translateY(20px);
     scale: 1.2;
     animation: ico 1s infinite;
+    position:relative ;
+    margin-bottom:20px;
 }
 @keyframes ico{
     0%{ scale: 1.2;}
     50%{scale: 1.4;}
     100%{scale:1.2;}
+}
+h2{
+    color:black;
+    text-align:center;
+}
+#buttonnext{
+    margin:0 auto;
+    hight:20px;
+    width:60px;
 }
 @media only screen and (max-width : 600px) {
     body{
