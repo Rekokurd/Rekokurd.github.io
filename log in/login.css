@@ -2,6 +2,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0%;
+    background: rgb(69, 52, 85);
 }
 #loginform{
     position: relative;
