@@ -21,6 +21,27 @@
             <button id="signinbtn"> sign in</button>
             <p id="forget">if you forget your password click <a href="">here</a></p>
         </form>
+        <div id="random">
+            <label for="choose1" id="choose1label "> your fisrt chose</label>
+            <input type="text" id="choose1">
+            <label for="choose2label"> your second choose</label>
+            <input type="text" name="" id="choose2">
+            <input type="submit" id="anjam" onclick="anjam()">
+            <p id="result"></p>
+
+        </div>
     </main>   
 </body>
+<script>
+ function anjam() {
+    let x= document.getElementById("choose1").value;
+    let y=document.getElementById("choose2").value;
+    let m=Math.floor(Math.random())
+    if (m===1) {
+        document.getElementById("result").innerHTML=x
+    } else {
+        document.getElementById("result").innerHTML=y
+    }
+ }
+</script>
 </html>
