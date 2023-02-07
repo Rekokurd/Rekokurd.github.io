@@ -27,7 +27,7 @@
             <input type="text" id="choose1">
             <label for="choose2label"> your second choose</label>
             <input type="text" name="" id="choose2">
-            <input type="submit" id="anjam" onclick="anjam()*2">
+            <input type="submit" id="anjam" onclick="anjam()">
             <p id="result"></p>
 
         </div>
@@ -37,7 +37,7 @@
  function anjam() {
     let x= document.getElementById("choose1").value;
     let y=document.getElementById("choose2").value;
-    let m=Math.floor(Math.random())
+    let m=Math.floor(Math.random()*2)
     if (m===1) {
         document.getElementById("result").innerHTML=x
     } else {
