@@ -9,15 +9,21 @@ body{
 }
 #loginform{
     position: relative;
-    border: 1px solid red;
+    border-radius: 20px;
     width: 300px;
     height: 350px;
     display: flex;
     flex-direction: column;
     margin: 40px auto 0 auto;
+    background: rgb(121, 94, 146) ;
+    box-shadow: 0px 0px 30px 10px rgb(142, 28, 130);
 }
 #loginp{
-    border: 1px solid pink;
+    border-bottom: 1px solid pink;
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
     width: 100%;
     text-align: center;
     margin: 12px auto 0 auto;
@@ -27,26 +33,43 @@ body{
     border: 1px solid green;
     width: fit-content;
     margin: 20px auto 0 auto;
+    color: aliceblue;
 }
 #usernameinpt{
     position: relative;
     width: 150px;
-    margin: 10px auto 0 auto;
+    margin: 5px auto 0 auto;
+    border-radius: 6px;
+}
+#usernameinpt:focus{
+    outline: none;
 }
 #passwordlabel{
     position: relative;
     width: fit-content;
-    border: 1px solid red;
+    color: aliceblue;
     margin: 20px auto 0 auto;
 }
 #passwordinpt{
     width: 150px;
-    margin: 10px auto 0 auto;
+    margin: 5px auto 0 auto;
+    border-radius: 6px;
+}
+#passwordinpt:focus{
+    outline: none;
 }
 #loginbtn{
     position: relative;
+    color: aliceblue;
+    background: rgb(206, 14, 187);
+    border:none;
     width: 150px;
     margin:6px auto 0 auto ;
+    transition: 0.2s;
+}
+#loginbtn:hover{
+    color: white;
+    background: red;
 }
 #border{
     width: 200px;
@@ -59,13 +82,20 @@ body{
     text-align: center;
     margin: 0% auto 0px auto;
     width: 20px;
-    background-color: rgb(247, 244, 244);
+    background-color:rgb(121, 94, 146)  ;
     position: relative;
     top: -9px;
 }
 #signinbtn{
     width: 150px;
     margin: 0 auto 0 auto;
+    color: white;
+    background: rgb(206, 14, 187);
+    border: none;
+    transition: 0.1s;
+}
+#signinbtn:hover{
+    background: red;
 }
 #forget{
     font-size: 14px;

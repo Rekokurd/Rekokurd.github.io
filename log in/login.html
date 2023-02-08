@@ -10,13 +10,13 @@
 <body>
     <main>
         <h1 style="text-align: center;">just for test!</h1>
-        <form action="" id="loginform">
+        <form onsubmit="getin()" id="loginform">
             <p id="loginp"> log in</p>
-            <label for="usernameinpt" id="usernamelabel"> email or username</label>
+            <label for="usernameinpt" id="usernamelabel"> Email</label>
             <input type="text" id="usernameinpt">
             <label for="passwordinpt" id="passwordlabel"> password</label>
             <input type="password" id="passwordinpt">
-            <input type="button" value="log in" id="loginbtn">
+            <input type="button" value="log in" id="loginbtn" onclick="getin()">
             <div id="border"></div>
             <p id="or">or</p>
             <button id="signinbtn"> sign in</button>
@@ -34,6 +34,18 @@
     </main>   
 </body>
 <script>
+    function getin() {
+        let x=document.getElementById("usernameinpt").value;
+        let y=document.getElementById("passwordinpt").value;
+        if (x=="rekan@gmail.com" && y==234) {
+            console.log("hi");
+            window.alert("correct")
+        }
+        else{
+            console.log("no")
+            window.alert("check it")
+        }
+    }
  function anjam() {
     let x= document.getElementById("choose1").value;
     let y=document.getElementById("choose2").value;
