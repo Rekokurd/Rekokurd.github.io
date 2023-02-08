@@ -14,3 +14,4 @@ function anjam(){
   
   }
 }
+crossOriginIsolated.log("hi")
