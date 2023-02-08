@@ -79,7 +79,7 @@ body{
     position: relative;
     background: rgb(129, 129, 221);
     width: 300px;
-    height: 800px;
+    height: 400px;
     border: 1px solid green;
     justify-content: center;
 }
