@@ -37,6 +37,7 @@ body{
 }
 #usernameinpt{
     position: relative;
+    border: none;
     width: 150px;
     margin: 5px auto 0 auto;
     border-radius: 6px;
@@ -54,6 +55,7 @@ body{
     width: 150px;
     margin: 5px auto 0 auto;
     border-radius: 6px;
+    border: none;
 }
 #passwordinpt:focus{
     outline: none;
@@ -84,7 +86,7 @@ body{
     width: 20px;
     background-color:rgb(121, 94, 146)  ;
     position: relative;
-    top: -9px;
+    top: -11px;
 }
 #signinbtn{
     width: 150px;
@@ -100,7 +102,8 @@ body{
 #forget{
     font-size: 14px;
     position: relative;
-    margin: 40px auto 0 auto;
+    margin: auto auto 0 auto;
+    color: white;
     
 }
 #random{
@@ -122,4 +125,7 @@ input{
 label{
     width: fit-content;
     margin: 0 auto 0 auto;
+}
+a{
+    text-decoration: none;
 }
