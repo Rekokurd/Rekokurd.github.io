@@ -10,8 +10,5 @@ function anjam(){
     else if(!isNaN(parseFloat(dinnar))) {
       document.getElementById('here').innerHTML= dinnar*100/nrxiAmro+'$'
     } 
-    
-  
   }
 }
-crossOriginIsolated.log("hi")
