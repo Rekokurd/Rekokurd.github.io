@@ -77,6 +77,7 @@ body{
 #border{
     width: 200px;
     background: red;
+    color: aqua;
     height: 1px;
     margin: 20px auto 0 auto;
     position: relative;
