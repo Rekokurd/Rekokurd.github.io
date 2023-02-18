@@ -12,4 +12,3 @@ function anjam(){
     } 
   }
 }
-        window.alert("نرخی ١٠٠ دۆلار بۆ ئەمڕۆ دیاری بکە ")
