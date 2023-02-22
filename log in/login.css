@@ -18,6 +18,7 @@ body{
     margin: 40px auto 0 auto;
     background: rgb(121, 94, 146) ;
     box-shadow: 0px 0px 30px 10px rgb(142, 28, 130);
+    transition: 6s;
 }
 #loginp{
     border-bottom: 1px solid pink;
