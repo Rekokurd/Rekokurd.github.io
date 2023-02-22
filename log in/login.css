@@ -74,7 +74,6 @@ body{
 #loginbtn:hover{
     color: white;
     background: red;
-    top: 300px;
 }
 #border{
     width: 200px;
@@ -93,12 +92,13 @@ body{
     top: -11px;
 }
 #signinbtn{
-    width: 150px;
-    margin: 0 auto 0 auto;
-    color: white;
+    position: relative;
+    color: aliceblue;
     background: rgb(206, 14, 187);
-    border: none;
-    transition: 0.1s;
+    border:none;
+    width: 150px;
+    margin:6px auto 0 auto ;
+    transition: 0.2s;
 }
 #signinbtn:hover{
     background: red;
