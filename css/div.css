@@ -1,0 +1,48 @@
+:root{
+    --div_background:rgb(11, 70, 95);
+}
+.div{
+    height: 300px;
+    width: 320px;
+    background-color: var(--div_background);
+    border: 2px solid aqua;
+    border-radius: 20px;
+    box-shadow: aqua 0px 0px 10px 1px ;
+    margin-left: 17px;
+    transition: 0.2s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.div::after{
+    position: absolute;
+    background-size: cover;
+    scale: 0.3;
+    border-radius: 200px;
+    left: 187px;
+    top: -65px;
+    width: 200px;
+    content: "";
+    transition: 0.5s;
+    height: 200px;
+}
+#div1::after{
+    background-image: url(/image/blankpic.png);
+}
+#div1:hover::after{
+    scale: 0.4;
+    left:210px ;
+    top:  -90px;
+}
+
+.div:hover{
+    scale: 1.02;
+}
+.div:hover{
+    margin-right: 20px;
+}
+@media only screen and (max-width : 1068px){
+    .div{
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,104 @@
+.topic{
+    color: aliceblue;
+    margin: 5% 0;
+    width: fit-content;
+    border-bottom: 2px solid orange;
+    position: relative;
+    left: 15%;
+    transition:  0.2s;
+    padding: 2px 9px;
+    font-size: 20px;
+}
+.div:hover .topic{
+    
+    border-radius: 20px;
+    box-shadow: orange 0px 0px 10px 3px ;
+}
+ul{
+    list-style: none;
+    color: white;
+}
+li{
+    margin-top: 15px;
+}
+#ola{
+    position: absolute;
+    top: 159px;
+    left: 90px;
+}
+.oll{
+    margin-top: 0px;
+}
+
+.social_link{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: white;
+    width: fit-content;
+    transition: 0.1s;
+}
+.social_link::before{
+  background-size: cover;
+  overflow: hidden; 
+  top: -3px;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  content: "... ";
+  font-size: 1px;
+  padding: 15px;
+  border-radius: 50px;
+  background-position: 29% 100%;
+  position: relative;
+}
+#facebook::before{
+    background-image: url(/image/facebook.png);
+}
+#facebook:hover{
+    color: rgb(107, 107, 236);
+}
+#instagram::before {
+    background-image: url(/image/insta.png);
+    background-position: 1% 100%;
+
+}
+#instagram:hover{
+    color: rgb(214, 64, 172);
+}
+#telegram:hover{
+    color: rgb(40, 40, 238);
+}
+#telegram::before{
+    background-image: url(/image/telegram.png);
+    background-position: 2% 100%;
+}
+#twetter:hover{
+    color: blue;
+}
+#twetter::before{
+    background-image: url(/image/twitter.png);
+    background-position: 0% 100%;
+}
+#snap:hover{
+    color: yellow;
+}
+#snap::before{
+    background-image: url(/image/snapchat.png);
+    background-position: 0% 100%;
+}
+#snap{
+
+}
+#snap::after{
+    content: " sorry! due to the weaknees in Snapshat I haven't put its link ";
+    position: absolute;
+    font-size: 10px;
+    left: 40px;
+    bottom: -27px;
+    width: 200px;
+
+}
+#snap:hover::after{
+    color: white;
+}
