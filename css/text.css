@@ -1,10 +1,20 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
+*/
+
 .topic{
     color: aliceblue;
     margin: 5% 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     border-bottom: 2px solid orange;
     position: relative;
     left: 15%;
+    -webkit-transition:  0.2s;
     transition:  0.2s;
     padding: 2px 9px;
     font-size: 20px;
@@ -12,7 +22,8 @@
 .div:hover .topic{
     
     border-radius: 20px;
-    box-shadow: orange 0px 0px 10px 3px ;
+    -webkit-box-shadow: orange 0px 0px 10px 3px ;
+            box-shadow: orange 0px 0px 10px 3px ;
 }
 ul{
     list-style: none;
@@ -35,7 +46,10 @@ li{
     margin-left: 20px;
     margin-top: 3px;
     color: white;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
+    -webkit-transition: 0.1s;
     transition: 0.1s;
     margin-left: auto;
     margin-right: auto;
@@ -128,7 +142,10 @@ li{
     left: 40px;
     bottom: -27px;
     width: 200px;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     
 }
 #snap:hover::after{

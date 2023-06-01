@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 2 version
+*/
+
 :root{
     --div_background:rgb(11, 70, 95);
 }
@@ -7,12 +14,19 @@
     background-color: var(--div_background);
     border: 2px solid aqua;
     border-radius: 20px;
-    box-shadow: aqua 0px 0px 10px 1px ;
+    -webkit-box-shadow: aqua 0px 0px 10px 1px ;
+            box-shadow: aqua 0px 0px 10px 1px ;
     margin-left: 17px;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 .div::after{
     position: absolute;
@@ -23,6 +37,7 @@
     top: -65px;
     width: 200px;
     content: "";
+    -webkit-transition: 0.5s;
     transition: 0.5s;
     height: 200px;
 }
