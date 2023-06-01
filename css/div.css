@@ -29,10 +29,13 @@
 #div1::after{
     background-image: url(/image/blankpic.png);
 }
-#div1:hover::after{
+.div:hover::after{
     scale: 0.4;
     left:210px ;
     top:  -90px;
+}
+#div2::after{
+    background-image: url(/image/social.jpg);
 }
 
 .div:hover{
@@ -45,4 +48,10 @@
     .div{
         margin-bottom: 20px;
     }
+}
+#div3::after{
+    background-image: url(/image/more.png);
+}
+#div3:hover{
+    margin-top: 12px;
 }
