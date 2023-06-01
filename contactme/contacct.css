@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
     position: relative;
-    background-image: url(/image/backgroun.png);
+
     background-position: 650px 60px;
     background-size:50%;
     background-repeat: no-repeat;
@@ -91,10 +91,10 @@ color: aliceblue;
     display: block;
     border-radius: 20px;
 }
-#about{
+#contact{
     color: white;
 }
-#about::after{
+#contact::after{
     background: rgb(248, 177, 121);
     width: 70px;
     color: white;
@@ -105,15 +105,7 @@ color: aliceblue;
     content: "";
 
 }
-#about::after{
-    background: rgb(248, 177, 121);
-    width: 70px;
-    left: -1px;
-    height: 5px;
-    position: relative;
-    display: block;
-    border-radius: 20px;
-}
+
 #project::after{
    left: 2px;
 }
@@ -198,14 +190,13 @@ main{
 }
 @media only screen and (max-width : 790px){
     #nav{
-        overflow-x: hidden;
         
         margin-right: 10px;
     }
 }
 @media only screen and (max-width : 587px){
     main{
-        
+        border: 1px solid red;
     }
 }
 @media only screen and (max-width : 790px){
@@ -214,20 +205,9 @@ main{
         margin-right: 10px;
     }
 }
-@media only screen and (max-width : 477px){
+@media only screen and (max-width : 600px){
     #text{
-
-        margin-left: 0%;
-        scale: 1;
-    }
-}
-@media only screen and (max-width : 360px){
-    #main_logo{
-        margin-left: auto;
-        margin-right: auto;
-    }
-    header{
-        width: 360px;
-        justify-content: center;
+        margin-left: 0px;
+        background: red;
     }
 }
