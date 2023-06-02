@@ -222,4 +222,7 @@ main{
     #resume_link{
        left: 30px;
     }
+    #main_logo::after{
+        margin-left: 8px;
+    }
 }
