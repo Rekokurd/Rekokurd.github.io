@@ -196,38 +196,27 @@ main{
     left: 110px;
     display: none;
 }
-@media only screen and (max-width : 790px){
-    #nav{
-        overflow-x: hidden;
-        
-        margin-right: 10px;
-    }
-}
-@media only screen and (max-width : 587px){
-    main{
-        
-    }
-}
-@media only screen and (max-width : 790px){
+@media only screen and (max-width : 400px){
     #nav{
         
-        margin-right: 10px;
-    }
-}
-@media only screen and (max-width : 477px){
-    #text{
-
-        margin-left: 0%;
-        scale: 1;
-    }
-}
-@media only screen and (max-width : 360px){
-    #main_logo{
         margin-left: auto;
         margin-right: auto;
     }
-    header{
-        width: 360px;
+     header{
+
         justify-content: center;
+     }
+    #main_logo{
+        margin-left: auto;
+        margin-right: auto;
+
+        position: relative;
+    }
+    main{
+        border: 1px solid transparent;
+    }
+    #text{
+        margin-left: 12%;
+        width: 300px;
     }
 }
