@@ -224,6 +224,6 @@ main{
     }
     #main_logo::after{
         margin-left: 8px;
-        left: 90px;
+        left: 80px;
     }
 }
