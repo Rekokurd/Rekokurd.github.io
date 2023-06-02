@@ -196,7 +196,7 @@ main{
     left: 110px;
     display: none;
 }
-@media only screen and (max-width : 400px){
+@media only screen and (max-width : 450px){
     #nav{
         
         margin-left: auto;
