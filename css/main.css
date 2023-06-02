@@ -219,4 +219,7 @@ main{
         margin-left: 12%;
         width: 300px;
     }
+    #resume_link{
+       left: 30px;
+    }
 }
