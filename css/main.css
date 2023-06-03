@@ -107,25 +107,61 @@ color: aliceblue;
     content: "";
 
 }
+#test::after{
+    width: 115px;
+}
 #project::after{
    left: 2px;
+   width: 75px;
+}
+
+#services::after{
+    left:2px;
+    width: 75px;
 }
 #contact::after{
     left: 3px;
+    width:100px;
 }
-.languages{
-
+#language_div{
     width: 200px;
     position: relative;
     display: flex;
+    flex-direction: column;
     height: fit-content;
     margin-top: auto;
     margin-bottom: auto;
     justify-content: space-evenly;
 }
-.language{
-    color: rgb(248, 177, 121);
-    position: relative;
+
+#language_button{
+    background: rgb(248, 177, 121);
+    color: var(--background);
+    border-radius: 7px;
+    padding: 5px;
+}
+#languages{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    background: rgb(248, 177, 121);
+    right: 1.6%;
+    width: 195px;
+    top: 25px;
+    border-radius: 0px 0px 7px 7px;
+}
+#language_div:hover #languages{
+    display: block;
+}
+.lnguage{
+    display: flex;
+
+    justify-content: center;
+    padding-top: 20px;
+    color: var(--background);
+}
+#arabic_language{
+    padding-bottom: 20px;
 }
 main{
     margin-top: 100px;
@@ -142,14 +178,18 @@ main{
     height: fit-content;
     color: white ;
     scale: 1.2;
-    margin-left: 200px;
-    max-width: 350px;
+    max-width: 850px;
     position: relative;
-    display: block;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-
+    border: 1px solid red;
+    height: 380px;
+    
+}
+.text{
+    border: 1px solid red;
+    margin-left: 200px;
 }
 #text1{
     color: white;
@@ -163,13 +203,12 @@ main{
     font-size: 40px;
     font-family: 'Buenard';
     position: relative;
-
-    top: -50px;
+    top: -90px;
 }
 #text3{
     position: relative;
-    top: -70px;
-    margin-left:30px ;
+    top:-150px;
+    margin-left:200px ;
     
 }
 #rekan{
@@ -182,13 +221,12 @@ main{
     color: rgb(22, 30, 49);
     text-align: center;
     width: 130px;
-    bottom: 90px;
     position: relative;
     padding: 5px 5px;
     background: rgb(248, 177, 121);
     border-radius: 4px;
-    top: -50px;
-    left: 130px;
+    top: -150px;
+    left: 10px;
     transition: 0.2s;
 }
 #resume_link:hover{

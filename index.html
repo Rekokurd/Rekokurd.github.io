@@ -23,18 +23,20 @@
             <a class="nav" id="test" href=""> Testimonials</a>
             <a class="nav" id="contact" href="/contactme/contact.html"> Contact me</a>
         </div>
-        <div class="languages ">
-            <a href="" class="language" id="english"> English </a>
-            <a href="" class="language" id="kurdish"> کوردی</a>
-            <a href="" class="language" id="arabic"> عربي</a>
+        <div id="language_div">
+            <button id="language_button" onclick="dfunction" class="dropbtn"> English</button>
+            <div id="languages" class="dropdown-content">
+                <a href="" class="lnguage"> کوردی </a>
+                <a href="" class="lnguage" id="arabic_language"> عربي</a>
 
+            </div>
         </div>
     </header> 
     <main>
         <div id="text">
-            <p id="text1"> Hi, my</p>
-            <p id="text2"> name is <span id="rekan">Rekan</span></p>
-            <p id="text3"> I'm a software engineering student, majoring in web design and development.</p>
+            <p id="text1" class="text"> Hi, my</p>
+            <p id="text2" class="text"> name is <span id="rekan">Rekan</span></p>
+            <p id="text3" class="text"> I'm a software engineering student, majoring in web design and development.</p>
             <a href="" id="resume_link" onclick="downloadPDF()">  see my resume</a>
         </div>
         <div id="contact_me">
