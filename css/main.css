@@ -21,8 +21,8 @@ a{
 header{
 
     height: 60px;
-
-    position: relative;
+    background: transparent, blur(40px);
+    position: sticky;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -57,15 +57,16 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: no-wrap;
-    width: 350px;
+    width: 550px;
     margin-left: auto;
     height: 20px;
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: 160px;
+    margin-right: 150px;
     font-family: 'Assistant';
     justify-content: space-around;
-    color: aliceblue;    
+    color: aliceblue;   
+
 }
 .nav{
     color: rgb(123, 129, 182);
@@ -96,7 +97,8 @@ color: aliceblue;
 }
 #about::after{
     background: rgb(248, 177, 121);
-    width: 70px;
+    width: 92px;
+    left: -1px;
     color: white;
     height: 5px;
     position: absolute;
@@ -105,20 +107,25 @@ color: aliceblue;
     content: "";
 
 }
-#about::after{
-    background: rgb(248, 177, 121);
-    width: 70px;
-    left: -1px;
-    height: 5px;
-    position: relative;
-    display: block;
-    border-radius: 20px;
-}
 #project::after{
    left: 2px;
 }
 #contact::after{
     left: 3px;
+}
+.languages{
+
+    width: 200px;
+    position: relative;
+    display: flex;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: space-evenly;
+}
+.language{
+    color: rgb(248, 177, 121);
+    position: relative;
 }
 main{
     margin-top: 100px;
