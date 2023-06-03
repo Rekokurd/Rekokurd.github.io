@@ -19,3 +19,10 @@ window.onclick = function(event) {
     }
   }
 }
+const input = document.getElementById('myInput');
+input.addEventListener('focus', function() {
+  this.removeAttribute('placeholder');
+});
+input.addEventListener('blur', function() {
+  this.setAttribute('placeholder', 'Enter your text');
+});
