@@ -156,7 +156,7 @@ header{
         scale: 0.9;
     }
     #language{
-       scale: 0.6;
+       scale: 0.8;
        margin: 2px 0px 1200px 0px;
        position: absolute;
     }
@@ -167,7 +167,7 @@ header{
     }
     #language{
         margin: 0;
-        left: -10px;
+        left: -3px;
     }
 }
 @media only screen and (max-width : 520px){
@@ -176,7 +176,10 @@ header{
         margin-top:auto ;
         margin-bottom:10px ;
         scale: 0.9;
-        width: 400px;
+        width: 440px;
+    }
+    .minu{
+        font-size: 13px;
     }
     #logo{
         left: 0px;
