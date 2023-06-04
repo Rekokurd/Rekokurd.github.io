@@ -4,8 +4,7 @@
 body{
     background: var(--background);
     margin: 0%;
-    max-width: 1280px;
-    overflow-x: auto;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -241,37 +240,7 @@ main{
     left: 110px;
     display: none;
 }
-@media only screen and (max-width : 450px){
-    #nav{
-        
-        margin-left: auto;
-        margin-right: auto;
-    }
-     header{
 
-        justify-content: center;
-     }
-    #main_logo{
-        margin-left: auto;
-        margin-right: auto;
-
-        position: relative;
-    }
-    main{
-        border: 1px solid transparent;
-    }
-    #text{
-        margin-left: 12%;
-        width: 300px;
-    }
-    #resume_link{
-       left: 30px;
-    }
-    #main_logo::after{
-        margin-left: 8px;
-        left: 80px;
-    }
-}
 #contact_me{
     background: white;
     width: 1263px;
@@ -343,4 +312,5 @@ input:focus::placeholder {
     outline: none;
     background: rgb(248, 177, 121) ;
 }
+
   
