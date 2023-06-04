@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minumem-scale=1">
     <title>Rekan</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init("IKYmqgdPB80BecU28");
+})();
+</script>
     <link href='https://fonts.googleapis.com/css?family=Bevan' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Buenard' rel='stylesheet'>
@@ -46,14 +57,17 @@
             </p>
         </div>
         <div id="contact">
-            <div id="form">
+              <form id="myForm">
                 <p id="contactme" style="margin-top: 30px; font-size: 22px;"> contact me</p>
                 <p id="contactme" style="margin-bottom: 40px; font-family: 'Amiko'; font-size: 13px;">feel free to contact me anytime</p>
-                <input class="input" id="nameinput" type="text" placeholder="name">
-                <input class="input" id="emailinput" type="email" placeholder="email">
-                <textarea class="input" id="messageinput" type="text" placeholder="message" ></textarea>
-                <button id="sendb"> send</button>
-            </div>
+                <input class="input" type="text" id="name" name="name" placeholder="name" required>
+                <input class="input" type="email" id="email" name="email" placeholder="email" required>
+                <textarea class="input" id="message" name="message" rows="5" cols="30" required placeholder="message" ></textarea>
+                <input id="sendb" type="submit" value="Submit">
+                <div id="response"></div>
+              </form>
+            
+              
             <div id="social">
                 <a href="" class="social" id="in"></a>
                 <a href="" class="social" id="facebook"></a>
@@ -65,7 +79,6 @@
     </main>
     
 </body>
+<script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>  
 <script src="javascript/resume.js"></script>
-<script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
-
 </html>

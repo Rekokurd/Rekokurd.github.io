@@ -22,37 +22,27 @@ function downloadPDF() {
   }
 }
 
-const input = document.getElementsByClassName('input');
-input.addEventListener('focus', function() {
-  this.removeAttribute('placeholder');
-});
-input.addEventListener('blur', function() {
-  this.setAttribute('placeholder', 'Enter your text');
-});
+(function() {
+  emailjs.init("IKYmqgdPB80BecU28"); // Replace with your EmailJS user ID
 
-// newwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
-emailjs.init("IKYmqgdPB80BecU28");
+  document.getElementById('myForm').addEventListener('submit', function(event) {
+    event.preventDefault();
 
-function sendEmail() {
-    event.preventDefault(); // Prevent the form from submitting normally
+    // Get the form data
+    var formData = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      message: document.getElementById('message').value
+    };
 
-    // Get the input values
-    var name = document.getElementById('nameinput').value;
-    var email = document.getElementById('emailinput').value;
-    var message = document.getElementById('messageinput').value;
-
-    // Send the email using EmailJS
-    emailjs.send("service_wkg7o9m", "template_f74zkcy", {
-        to_email: email,
-        from_name: name,
-        message: message
-    })
-    .then(function(response) {
-        console.log('Email sent successfully', response);
-        // You can add a success message or any other desired action here
-    }, function(error) {
-        console.error('Email sending failed', error);
-        // You can add an error message or any other desired action here
-    });
-}
-
+    // Send the form data via EmailJS
+    emailjs.send("service_wkg7o9m", "template_f74zkcy", formData)
+      .then(function(response) {
+        document.getElementById('response').innerHTML = "your message snet!";
+        console.log('SUCCESS!', response.status, response.text);
+      }, function(error) {
+        document.getElementById('response').innerHTML = "Error occurred while submitting the form.";
+        console.log('FAILED...', error);
+      });
+  });
+})();
