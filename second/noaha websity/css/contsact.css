@@ -130,10 +130,6 @@ input:focus::placeholder {
     background-position: -11px -9px;
 }
 @media only screen and (max-width : 520px){
-    #sendb{
-        background: red;
-        
-    }
     #myForm{
         position: relative;
         margin: 82px 0 0 80px ;
