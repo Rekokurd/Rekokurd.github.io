@@ -68,6 +68,10 @@ input:focus::placeholder {
     background: rgb(248,177,121);
     color: rgb(22,30,49);
     border-radius: 4px;
+    transition: 0.2s;
+}
+#sendb:hover{
+    font-size: 10px;
 }
 #response{
     border: 1px solid rgb(248,177,121) ;
