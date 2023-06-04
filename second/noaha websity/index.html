@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contsact.css">
 
 </head>
 <body style="overflow-x: hidden;">
@@ -44,9 +45,27 @@
                 <a href="" id="resume_link" onclick="downloadPDF()">  see my resume</a>
             </p>
         </div>
+        <div id="contact">
+            <div id="form">
+                <p id="contactme" style="margin-top: 30px; font-size: 22px;"> contact me</p>
+                <p id="contactme" style="margin-bottom: 40px; font-family: 'Amiko'; font-size: 13px;">feel free to contact me anytime</p>
+                <input class="input" id="nameinput" type="text" placeholder="name">
+                <input class="input" id="emailinput" type="email" placeholder="email">
+                <textarea class="input" id="messageinput" type="text" placeholder="message" ></textarea>
+                <button id="sendb"> send</button>
+            </div>
+            <div id="social">
+                <a href="" class="social" id="in"></a>
+                <a href="" class="social" id="facebook"></a>
+                <a href="" class="social" id="twitter"> </a>
+                <a href="" class="social" id="whatsapp"> </a>
+            </div>
+
+        </div>
     </main>
     
 </body>
 <script src="javascript/resume.js"></script>
+<script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>
 
 </html>

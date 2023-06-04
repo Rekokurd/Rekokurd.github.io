@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-position: 650px;
     background-size: 50%;
+    display: none;
 }
 #text{
     font-size: 50px;
@@ -13,8 +14,7 @@
     line-height: 40px;
     font-family: 'buenard';
     color: white;
-
-    width: 670px;
+    width: 600px;
     height: 300px;
 }
 #rekan{
@@ -37,6 +37,10 @@
     width: fit-content;
     position: relative;
     top: 40px;
+    transition: 0.2s ;
+}
+#resume_link:hover{
+    font-size: 18px;
 }
 @media only screen and (max-width : 980px){
     #about{
