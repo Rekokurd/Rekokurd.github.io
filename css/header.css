@@ -168,6 +168,7 @@ header{
     #language{
         margin: 0;
         left: -3px;
+        top: 0;
     }
 }
 @media only screen and (max-width : 520px){
