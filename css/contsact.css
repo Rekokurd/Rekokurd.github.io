@@ -145,6 +145,6 @@ input:focus::placeholder {
 }
 @media only screen and (max-width : 430px){
     #myForm{
-        margin: 82px 0 0 50px ;
+        margin: 82px 0 0 40px ;
     }
 }
