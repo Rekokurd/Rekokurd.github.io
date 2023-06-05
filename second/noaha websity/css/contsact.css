@@ -2,7 +2,7 @@
     height: 600px;
     display: flex;
     flex-direction: row;
-    background-image: url(images/contactbackground.jpg);
+    background-image: url(/images/contactbackground.jpg);
     background-repeat: no-repeat;
     background-position: -20px;
     background-size: 600px;
@@ -56,8 +56,8 @@ input:focus::placeholder {
 }
 #message::placeholder{
     text-align: left;
-    position: absolute;
-    text-indent: 12px;
+    position: relative;
+    text-indent: 1px;
 
 }
 #sendb{
@@ -75,11 +75,14 @@ input:focus::placeholder {
 }
 #response{
     border: 1px solid rgb(248,177,121) ;
-    position: absolute;
+    position: relative;
     display: flex;
     color: white;
     bottom: 50px;
-    margin-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -10px;
+    padding: 5px;
 }
 #social{
     position: relative;
