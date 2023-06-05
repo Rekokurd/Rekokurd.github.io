@@ -6,7 +6,9 @@ header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    position: relative;
+    position: sticky;
+    z-index: 9999;
+    top: 0%;
     height: 70px;
     background: var(--background);
 }
