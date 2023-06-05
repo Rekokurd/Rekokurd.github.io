@@ -14,7 +14,7 @@
     line-height: 40px;
     font-family: 'buenard';
     color: white;
-    width: 600px;
+    width: 500px;
     height: 300px;
 }
 #rekan{
@@ -75,11 +75,21 @@
     #resume_link{
        position: absolute;
        left: 29px;
-       margin-top: 200px;
+       margin-top: 130px;
+       scale: 0.8;
+    }
+    #about{
+        height: 850px;
     }
     #text{
         scale: 0.91;
-        width: 430px;
+        width: 290px;
+    }
+    #shortInfo{
+        display: block;
+        line-height: 25px;
+        position: relative;
+
     }
 }
 @media only screen and (max-width : 435px){
