@@ -3,54 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,  minumem-scale=1, maximum-scale=1">
-    <title>rekan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minumem-scale=1">
+    <title>Rekan</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init("IKYmqgdPB80BecU28");
+})();
+</script>
     <link href='https://fonts.googleapis.com/css?family=Bevan' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Alex Brush' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Buenard' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Assistant' rel='stylesheet'>
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="css/responisive.css">
-</head>
-<body>
-    <header>
-        <div id="logo">
-            <h2 id="main_logo"> REKAN </h2>
-        </div>
-        <div id="nav">
-            <a class="nav" id="about" href=""> About me</a>
-            <a class="nav" id="services" href=""> Services</a>
-            <a class="nav" id="project" href=""> Projects</a>
-            <a class="nav" id="test" href=""> Testimonials</a>
-            <a class="nav" id="contact" href="second/noaha websity/index.html"> Contact me</a>
-        </div>
-        <div id="language_div">
-            <button id="language_button" onclick="dfunction" class="dropbtn"> English</button>
-            <div id="languages" class="dropdown-content">
-                <a href="" class="lnguage"> کوردی </a>
-                <a href="" class="lnguage" id="arabic_language"> عربي</a>
+    <link href='https://fonts.googleapis.com/css?family=Amiko' rel='stylesheet'>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contsact.css">
 
+</head>
+<body style="overflow-x: hidden;">
+    <header>
+        <h3 id="logo"> REKAN </h3>
+        <div id="minu">
+            <button id="aboutb" class="minu"> About me</button>
+            <button id="serviceb" class="minu"> Services</button>
+            <button id="projectb" class="minu"> Projects</button>
+            <button id="testb" class="minu"> Testimonials</button>
+            <button id="contactb" class="minu"> contact me</button>
+        </div>
+        <div id="language">
+            <button id="englishb"> English</button>
+            <div id="otherLanguage">
+                <a href="" class="language"> کوردی</a>
+                <a href="" class="language" id="arabicl">عربی</a>
             </div>
         </div>
-    </header> 
+    </header>
     <main>
-        <div id="text">
-            <p id="text1" class="text"> Hi, my</p>
-            <p id="text2" class="text"> name is <span id="rekan">Rekan</span></p>
-            <p id="text3" class="text"> I'm a software engineering student, majoring in web design and development.</p>
-            <a href="" id="resume_link" onclick="downloadPDF()">  see my resume</a>
+        <div id="about">
+            <p id="text"> 
+                Hi, my <br>
+                name is <span id="rekan"> Rekan</span>
+                <br>
+                <span id="shortInfo">I'm software engineering student speciality in web design and development</span>
+                <a href="" id="resume_link" onclick="downloadPDF()">  see my resume</a>
+            </p>
         </div>
-        <div id="contact_me">
-          <div id="contact_form">
-            <p id="contact_header"> contact me</p>
-            <p id="contact_info"> feel free to contact me anytime </p>
-            <input  class="input" id="name_input" type="text" placeholder="name">
-            <input  class="input" id="email_input" type="email" placeholder="emaol">
-            <input   id="message_input" type="text" placeholder="message">
-            <button  id="send_form"> send</button>
-          </div>
+        <div id="contact">
+              <form id="myForm">
+                <p id="contactme" style="margin-top: 30px; font-size: 22px;"> contact me</p>
+                <p id="contactme" style="margin-bottom: 40px; font-family: 'Amiko'; font-size: 13px;">feel free to contact me anytime</p>
+                <input class="input" type="text" id="name" name="name" placeholder="name" required>
+                <input class="input" type="email" id="email" name="email" placeholder="email" required>
+                <textarea class="input" id="message" name="message" rows="5" cols="30" required placeholder="message" ></textarea>
+                <input id="sendb" type="submit" value="Submit">
+                <div id="response">hi</div>
+              </form>
+            
+              
+            <div id="social">
+                <a href="" class="social" id="in"></a>
+                <a href="" class="social" id="facebook"></a>
+                <a href="" class="social" id="twitter"> </a>
+                <a href="" class="social" id="whatsapp"> </a>
+            </div>
+
         </div>
     </main>
+    
 </body>
-<script src="js/js.js"></script>
+<script src="https://cdn.emailjs.com/sdk/2.6.4/email.min.js"></script>  
+<script src="javascript/resume.js"></script>
 </html>
