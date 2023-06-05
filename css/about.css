@@ -27,6 +27,8 @@
     position: relative;
     left: 50px;
     position: relative;
+    line-height: 1px;
+
 }
 #resume_link{
     font-size: 20px;
@@ -38,6 +40,7 @@
     position: relative;
     top: 40px;
     transition: 0.2s ;
+    left: -36px;
 }
 #resume_link:hover{
     font-size: 18px;
