@@ -191,3 +191,9 @@ header{
         height: 80px;
     }
 }
+@media only screen and (max-width : 435px){
+    #minu{
+        left: -30px;
+
+    }
+}
