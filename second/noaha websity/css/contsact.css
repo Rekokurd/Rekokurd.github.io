@@ -105,14 +105,14 @@ input:focus::placeholder {
     scale: 1.2;
 }
 #in{
-    background-image: url(images/in.png);
+    background-image: url(/images/in.png);
     background-size: 64px;
     background-repeat: no-repeat;
     background-position: -5px;
 }
 #facebook{
     display: block;
-    background-image: url(images/facebook.png);
+    background-image: url(/images/facebook.png);
     background-size: 64px;
     background-repeat: no-repeat;
     background-position: -5px -2px;
@@ -120,7 +120,7 @@ input:focus::placeholder {
 }
 #twitter{
     display: block;
-    background-image: url(images/twitter.png);
+    background-image: url(/images/twitter.png);
     background-size: 280px;
     background-repeat: no-repeat;
     background-position: -5px -2px;
@@ -128,7 +128,7 @@ input:focus::placeholder {
 }
 #whatsapp{
     display: block;
-    background-image: url(images/wha.png);
+    background-image: url(/images/wha.png);
     background-size: 280px;
     background-repeat: no-repeat;
     background-position: -11px -9px;

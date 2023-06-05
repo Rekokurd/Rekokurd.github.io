@@ -1,7 +1,7 @@
 #about{
     background: rgb(22,30,49);
     height: 550px;
-    background-image: url(images/backgroun.png);
+    background-image: url(/images/backgroun.png);
     background-repeat: no-repeat;
     background-position: 650px;
     background-size: 50%;
