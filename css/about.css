@@ -5,6 +5,8 @@
     background-repeat: no-repeat;
     background-position: 650px;
     background-size: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 #text{
@@ -16,7 +18,10 @@
     color: white;
     width: 500px;
     height: 300px;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 #rekan{
     font-family: 'Alex Brush';
@@ -37,9 +42,12 @@
     background: rgb(248, 177, 121);
     padding:1px  9px 2px 9px;
     border-radius: 4px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     width: fit-content;
     position: relative;
     top: 40px;
+    -webkit-transition: 0.2s ;
     transition: 0.2s ;
     left: -36px;
 }

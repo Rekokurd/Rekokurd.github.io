@@ -1,19 +1,41 @@
 #contact{
     height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     background-image: url(/images/contactbackground.jpg);
     background-repeat: no-repeat;
     background-position: 165px;
     background-size: 600px;
 }
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+  }
+input:focus::-moz-placeholder {
+    opacity: 0;
+  }
+input:focus:-ms-input-placeholder {
+    opacity: 0;
+  }
+input:focus::-ms-input-placeholder {
+    opacity: 0;
+  }
 input:focus::placeholder {
     opacity: 0;
   }
 #myForm{
     background: rgb(22,30,49);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 90px 0 0 650px;
     min-width: 300px;
     height: 400px;
@@ -24,7 +46,10 @@ input:focus::placeholder {
     color: aliceblue;
     text-align: center;
     margin: 0;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     font-style: bold;
     font-weight: 200px;
     font-size: 29px;
@@ -51,12 +76,40 @@ input:focus::placeholder {
     height: 100px;
     border: 1px solid white;
     margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     top: 0;
-    writing-mode: vertical-rl; /* Sets vertical writing mode, right-to-left */
-    text-orientation: upright; /* Ensures upright text orientation */
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl; 
+    text-orientation: upright; 
     overflow-wrap: break-word;
     resize: none;
+}
+#message::-webkit-input-placeholder{
+    text-align: left;
+    position: relative;
+    text-indent: 1px;
+
+}
+#message::-moz-placeholder{
+    text-align: left;
+    position: relative;
+    text-indent: 1px;
+
+}
+#message:-ms-input-placeholder{
+    text-align: left;
+    position: relative;
+    text-indent: 1px;
+
+}
+#message::-ms-input-placeholder{
+    text-align: left;
+    position: relative;
+    text-indent: 1px;
+
 }
 #message::placeholder{
     text-align: left;
@@ -72,6 +125,7 @@ input:focus::placeholder {
     background: rgb(248,177,121);
     color: rgb(22,30,49);
     border-radius: 4px;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -82,6 +136,8 @@ input:focus::placeholder {
 }
 #response{
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: white;
     bottom: 50px;
@@ -95,9 +151,15 @@ input:focus::placeholder {
     margin-right: 30%;
     top: 150px;
     height: 250px;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     left: -30px;
     
 }
@@ -107,6 +169,7 @@ input:focus::placeholder {
     height: 50px;
     width: 50px;
     background: white;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
 }
 .social:hover{

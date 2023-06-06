@@ -3,9 +3,15 @@
     --orange:rgb(248,177,121);
 }
 header{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     position: sticky;
     top: 0;
     z-index: 200;
@@ -21,7 +27,10 @@ header{
     margin-top: auto;
     margin-bottom: auto;
     display: inline-block;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
   
   #logo::after {
@@ -33,7 +42,8 @@ header{
     position: absolute;
     top: 50%;
     right: -5px;
-    transform: translate(90%, -50%);
+    -webkit-transform: translate(90%, -50%);
+            transform: translate(90%, -50%);
   }
   
 #minu{
@@ -43,11 +53,18 @@ header{
     margin-left: auto;
     margin-right: 110px;
     width: 600px;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 .minu {
     position: relative;
@@ -57,7 +74,10 @@ header{
     border: none;
     background: none;
     cursor: pointer;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
   
   .minu::after {
@@ -69,28 +89,37 @@ header{
     height: 2px;
     background-color: var(--orange);
     border-radius: 5px;
-    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   }
   
   #aboutb:hover::after {
-    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
   
   #serviceb:hover::after {
-    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
   
   #projectb:hover::after {
-    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
   
   #testb:hover::after {
-    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
   
   #contactb:hover::after {
-    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
   }
   
   
@@ -99,8 +128,12 @@ header{
     padding: 5px 0px;
     background: var(--orange);
     color: var(--background);
+    -webkit-transition: 0.2s;
     transition: 0.2s;
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 .language:hover{
     color: aliceblue;
@@ -109,19 +142,28 @@ header{
     border-radius: 0 0 4px 4px;
 }
 #language{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     position: absolute;
     right: 10px;
     margin-left: auto;
     width: 80px;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
     border-radius: 2px;
     top: 29px;
     
 }
 #language:hover #otherLanguage{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 #englishb{
@@ -132,12 +174,16 @@ header{
 }
 #otherLanguage{
     display: none;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     position: absolute;
     padding-top: 10px;
     width: 80px;
     top: 11px;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
     border-radius: 120px;
     color: var(--background);
@@ -238,7 +284,9 @@ header{
         left: -10px;
         width: 350px;
         line-height: 30px;
-        justify-content: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         top: -20px;
     }
     .minu{

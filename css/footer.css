@@ -1,24 +1,33 @@
 footer{
     background: rgb(22,30,49);
     height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 #rImage{
     width: 80px;
     margin: 10px auto;
 }
 #footerSocial{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 300px;
     height: 100px;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     margin: 0 auto;
 }
 .socialf{
     overflow: hidden;
     height: 50px;
     width: 50px;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
 }
 .socialf:hover{
@@ -53,6 +62,8 @@ footer{
     color: white;
     width: 370px;
     text-align: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
     height: fit-content;
     margin: 0 auto;
     font-family: 'Anonymous Pro';
