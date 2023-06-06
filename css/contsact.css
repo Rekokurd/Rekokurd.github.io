@@ -146,6 +146,9 @@ input:focus::placeholder {
         position: relative;
         margin: 82px 0 0 80px ;
     }
+    #contact{
+        background-image: none;
+    }
 }
 @media only screen and (max-width : 430px){
     #myForm{

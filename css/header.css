@@ -228,6 +228,9 @@ header{
         left: 4px;
         width: 400px;
     }
+    header{
+        height: 150px;
+    }
     
 }
 @media only screen and (max-width : 424px){
