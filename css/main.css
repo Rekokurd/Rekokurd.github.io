@@ -7,6 +7,25 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
 }
+::-webkit-scrollbar-button{
+    border: 10px;
+    background: white;
+    display: none;
+}
+::-webkit-scrollbar-track{
+    border-radius: 200px;
+    width: 10px;
+    box-shadow: 1px 1px 10px black;
+}
+::-webkit-scrollbar-thumb{
+    background: rgba(38, 3, 3, 0.351);
+    border-radius: 200px;
+}
+::-webkit-scrollbar{
+    border: 0px;
+    
+    width: 10px;
+}
 a{
     text-decoration: none;
 }

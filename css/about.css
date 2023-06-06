@@ -16,6 +16,7 @@
     color: white;
     width: 500px;
     height: 300px;
+    user-select: none;
 }
 #rekan{
     font-family: 'Alex Brush';
@@ -55,9 +56,10 @@
        width: 500px;
     }
 }
+
 @media only screen and (max-width : 870px){
     #text{
-        margin-left: auto;
+        margin-left: 90px;
         margin-right: auto;
     }
     #about{
