@@ -1,4 +1,62 @@
 footer{
     background: rgb(22,30,49);
-    height: 200px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+#rImage{
+    width: 80px;
+    margin: 10px auto;
+}
+#footerSocial{
+    display: flex;
+    width: 300px;
+    height: 100px;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.socialf{
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    transition: 0.2s;
+}
+.socialf:hover{
+    scale: 0.9;
+}
+#facebookf{
+    display: block;
+    background-image: url(/images/facebook.png);
+    background-size: 44px;
+    background-repeat: no-repeat;
+}
+#inf{
+    display: block;
+    background-image: url(/images/in.png);
+    background-size: 44px;
+    background-repeat: no-repeat;
+}
+#whatsappf{
+    display: block;
+    background-image: url(/images/wha.png);
+    background-size: 204px;
+    background-repeat: no-repeat;
+}
+#twitterf{
+    display: block;
+    background-image: url(/images/twitter.png);
+    background-size: 204px;
+    background-repeat: no-repeat;
+    
+}
+#lastText{
+    color: white;
+    width: 370px;
+    text-align: center;
+    height: fit-content;
+    margin: 0 auto;
+    font-family: 'Anonymous Pro';
+}
+#lastWord{
+    font-family: 'Abril Fatface';
 }
