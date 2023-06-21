@@ -52,8 +52,8 @@ header{
     margin-bottom: auto;
     margin-left: auto;
     margin-right: 110px;
-    /* the orgin width is 600px width */
-    width: 300px; 
+    /* the orgin width is 300px width */
+    width: 600px; 
     -ms-flex-pack: distribute;
         justify-content: space-around;
     position: relative;
@@ -98,7 +98,7 @@ header{
     transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
   }
   #serviceb, #projectb, #testb{
-    display: none;
+    display: flex;
   }
   #aboutb:hover::after {
     -webkit-transform: scaleX(1);
