@@ -23,6 +23,7 @@
     height: 40px;
     margin: 70px auto 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .project_minu{
@@ -30,8 +31,95 @@
 }
 #gray{
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
     scale: 0.8;
     margin-left: 200px;
     width: 900px;
     height: 400px;
+}
+@media only screen and ( max-width:1017px){
+    #gray{
+        left: -200px;
+    }
+    #projects_minu{
+        position: relative;
+        left: -90px;
+    }
+    
+}
+@media only screen and (max-width : 819.99px){
+    #gray{
+        
+        left: -300px;
+    }
+    #projects_minu{
+        position: relative;
+        left: -190px;
+    }
+    
+}
+@media only screen and (max-width : 729px){
+    #gray{
+        scale: 0.7;
+        left: -320px;
+    }
+   
+}
+@media only screen and (max-width : 700px){
+    #projects_minu{
+        left: -240px;
+    }
+   
+    
+}
+@media only screen and (max-width : 680px){
+    
+}
+
+@media only screen and (max-width : 576px){
+    #gray{
+        scale: 0.6;
+        left: -360px;
+    }
+    #projects_minu{
+        left: -270px;
+        top: 60px;
+    }
+}
+@media only screen and (max-width : 550px){
+    #gray{
+        left: -400px;
+    }
+    #projects_minu{
+        scale: 0.9;
+        left: -300px;
+    }
+    
+}
+
+@media only screen and (max-width : 503px){
+    #gray{
+         scale: 0.51;
+         left: -420px;
+    }
+    #projects_minu{
+        scale: 0.8;
+        left: -320px;
+    }
+    
+}
+@media only screen and (max-width : 484px){
+    
+    #gray{
+        scale: 0.51;
+        left: -420px;
+   }
+   #projects_minu{
+       scale: 0.8;
+       left: -350px;
+       border: 1px solid red;
+       width: 500px;
+   }
+    
 }
