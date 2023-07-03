@@ -71,8 +71,3 @@ footer{
 #lastWord{
     font-family: 'Abril Fatface';
 }
-@media only screen and (max-width : 424px){
-    footer{
-        max-width: 400px;
-    }
-}

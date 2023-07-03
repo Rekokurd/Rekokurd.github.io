@@ -3,8 +3,8 @@
     flex-direction: column;
     flex-wrap: wrap;
     background-color: white;
-    height: 1000px;
-    justify-content: center;
+    height: 950px;
+
 
 }
 #project_top{
@@ -19,71 +19,25 @@
     
 }
 #projects_minu{
-    position: relative;
-    max-width: 600px;
+    width: 600px;
     height: 40px;
-    margin: 80px auto 0;
+    margin: 70px auto 0 auto;
     display: flex;
-    justify-content: center;
-    justify-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 .project_minu{
     font-family: 'Averia Sans Libre';
-    margin: 0 25px;
 }
 #gray{
     position: relative;
     display: flex;
-    flex-direction: row;
-    margin: 10px auto;
-    left: 10px;
-    overflow: hidden;
     flex-wrap: wrap;
-    max-width: 700px;
-    height: 500px;
+    scale: 0.8;
+    margin-left: 200px;
+    width: 900px;
+    height: 400px;
 }
-.divp{
-    width: 200px;
-    height: 200px;
-    margin-bottom: 10px;
-    margin-right: 20px;
-    border-radius: 10px;
-    background: rgb(203, 199, 199);
-}
-@media only screen and (max-width : 460px){
-    #gray{
-        scale: 0.95;
-        width: 500px;
-        left: 0;
-        overflow: hidden;
-    }
-    .divp{
-        margin-right: 10px;
-    }
-    #projects_minu{
-        width: 400px;
-        height: fit-content;
-        margin-left: 0%;
-        display: grid;
-    }
-    .project_minu{
-        margin: 0 0px;
-    }
-    #project_top{
-        margin-left: 15%;
-    }
-}
-@media only screen and (max-width :400px){
-    #gray{
-        scale: 0.8;
-        left: -30px;
-        margin-left: 0%;
-        margin-right: 0%;
-    }
-}
-/*
 @media only screen and ( max-width:1017px){
     #gray{
         left: -200px;
@@ -177,4 +131,3 @@
    }
     
 }
-*/

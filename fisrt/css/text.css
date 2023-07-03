@@ -1,5 +1,6 @@
 #testio{
-    height: 1850px;
+    height: 750px;
+    width: fit-content
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -11,7 +12,9 @@
     font-size: 40px;
 }
 #client_div{
-    height: 850px;
+    height: 350px;
+    max-width: 1200px;
+    border: 1px solid red;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -22,7 +25,6 @@
 .test_div{
     background:rgb(22,30,49);
     width: 300px;
-    height:350px ;
     border-radius: 10px;
     margin-top: 10px;
 }
@@ -35,9 +37,8 @@
     display: block;
     background-position: 20px 0px;
     background-size: cover;
-    position: relative;
-    top: -190px;
-    left: 150px;
+    position: absolute;
+    top: -60px;
 
 }
 .qoute{
@@ -53,27 +54,8 @@ font-size: 30px;
     left: 200px;
 
 }
-@media only screen and (max-width : 924px){
-    .test_div{
-        margin-bottom: 30px;
-        margin-left: 10px;
+@media only screen and (max-width : 1164px){
+    #client_div{
+        border: 1px solid #cbffc0;
     }
-    .test_div::after{
-        top: -140px;
-        left: 180px;
-        scale: 0.7;
-    }
-}
-@media only screen and (max-width : 424px){
-   #client_div{ 
-    max-width: 400px;
-      margin-left: 0%;
-      margin-right: 0%;
-      justify-content: center;
-   }
-   .test_div{
-    margin-left: 0%;
-    margin-right: 0%;
-    position: relative;
-   }
 }

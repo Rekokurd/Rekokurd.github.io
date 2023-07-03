@@ -1,0 +1,228 @@
+#contact{
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-image: url(/images/contactbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: 165px;
+    background-size: 600px;
+}
+input:focus::-webkit-input-placeholder {
+    opacity: 0;
+  }
+input:focus::-moz-placeholder {
+    opacity: 0;
+  }
+input:focus:-ms-input-placeholder {
+    opacity: 0;
+  }
+input:focus::-ms-input-placeholder {
+    opacity: 0;
+  }
+input:focus::placeholder {
+    opacity: 0;
+  }
+#myForm{
+    background: rgb(22,30,49);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 90px 0 0 650px;
+    min-width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    
+}
+#contactme{
+    color: aliceblue;
+    text-align: center;
+    margin: 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    font-style: bold;
+    font-weight: 200px;
+    font-size: 29px;
+}
+.input{
+    background: transparent;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    font-family: 'Amiko';
+    outline: none;
+    color: white;
+}
+#name, #email{
+    border-bottom:1px solid white ;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 24px;
+
+}
+#message{
+    height: 100px;
+    border: 1px solid white;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 0;
+    -webkit-writing-mode: vertical-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: vertical-rl; 
+    text-orientation: upright; 
+    overflow-wrap: break-word;
+    resize: none;
+}
+#message::-webkit-input-placeholder{
+    text-align: left;
+    position: relative;
+    text-indent: 1px;
+
+}
+#message::-moz-placeholder{
+    text-align: left;
+    position: relative;
+    text-indent: 1px;
+
+}
+#message:-ms-input-placeholder{
+    text-align: left;
+    position: relative;
+    text-indent: 1px;
+
+}
+#message::-ms-input-placeholder{
+    text-align: left;
+    position: relative;
+    text-indent: 1px;
+
+}
+#message::placeholder{
+    text-align: left;
+    position: relative;
+    text-indent: 1px;
+
+}
+#sendb{
+    width: 210px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background: rgb(248,177,121);
+    color: rgb(22,30,49);
+    border-radius: 4px;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    cursor: pointer;
+}
+#sendb:hover{
+    font-size: 12px;
+    width: 160px;
+    
+}
+#response{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -10px;
+}
+#social{
+    position: relative;
+    width: 80px;
+    margin-right: 30%;
+    top: 150px;
+    height: 250px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: -30px;
+    
+}
+.social{
+    border-radius: 200px;
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    background: white;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+.social:hover{
+    scale: 1.2;
+}
+#in{
+    background-image: url(/images/in.png);
+    background-size: 64px;
+    background-repeat: no-repeat;
+    background-position: -5px;
+}
+#facebook{
+    display: block;
+    background-image: url(/images/facebook.png);
+    background-size: 64px;
+    background-repeat: no-repeat;
+    background-position: -5px -2px;
+    
+}
+#twitter{
+    display: block;
+    background-image: url(/images/twitter.png);
+    background-size: 280px;
+    background-repeat: no-repeat;
+    background-position: -5px -2px;
+    
+}
+#whatsapp{
+    display: block;
+    background-image: url(/images/wha.png);
+    background-size: 280px;
+    background-repeat: no-repeat;
+    background-position: -11px -9px;
+}
+@media only screen and (max-width : 980px){
+    #myForm{
+        margin-left: auto;
+    }
+    #contact{
+        background-image: none;
+    }
+}
+@media only screen and (max-width : 520px){
+    #myForm{
+        position: relative;
+        margin: 82px 0 0 80px ;
+    }
+    #contact{
+        background-image: none;
+    }
+}
+@media only screen and (max-width : 430px){
+    #myForm{
+        margin: 82px 0 0 20px ;
+    }
+}
