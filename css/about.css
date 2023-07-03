@@ -82,6 +82,9 @@
     }
 }
 @media only screen and (max-width : 570px){
+    #about{
+        max-width: 700px;
+    }
     #resume_link{
        position: absolute;
        left: 29px;
