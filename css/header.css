@@ -6,6 +6,7 @@ header{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    overflow: hidden;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -258,6 +259,9 @@ header{
     }
 }
 @media only screen and (max-width : 444px){
+    header{
+        max-width: 300px;
+    }
     #logo{
         left: 100px;
     }
