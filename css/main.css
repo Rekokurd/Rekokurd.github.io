@@ -3,6 +3,8 @@ html {
   }
 body{
     margin: 0%;
+    max-width: 1970px;
+    overflow-x: hidden;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
