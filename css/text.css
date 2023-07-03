@@ -63,6 +63,9 @@ font-size: 30px;
         left: 180px;
         scale: 0.7;
     }
+    #test_top{
+        font-size: 23px;
+    }
 }
 @media only screen and (max-width : 424px){
    #client_div{ 
@@ -71,6 +74,13 @@ font-size: 30px;
       margin-right: 0%;
       justify-content: center;
    }
+   #test_top{
+    font-size: 20px;
+    right: 40px;
+    font-weight: 100px;
+    border: 1px solid red;
+    position: relative;
+}
    .test_div{
     margin-left: 0%;
     margin-right: 0%;
