@@ -57,6 +57,7 @@
 @media only screen and (max-width : 444px){
     #about{
         max-width: 430px;
+        overflow: hidden;
     }
     
 }
