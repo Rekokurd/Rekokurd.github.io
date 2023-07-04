@@ -204,6 +204,13 @@ input:focus::placeholder {
     background-repeat: no-repeat;
     background-position: -11px -9px;
 }
+@media only screen and (max-width : 444px){
+    #contact{
+        max-width: 300px;
+        border: 1px solid red;
+    }
+}
+
 @media only screen and (max-width : 980px){
     #myForm{
         margin-left: auto;

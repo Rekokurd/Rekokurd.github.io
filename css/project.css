@@ -52,6 +52,12 @@
     border-radius: 10px;
     background: rgb(203, 199, 199);
 }
+@media only screen and (max-width : 444px){
+    #project{
+        max-width: 300px;
+        border: 1px solid red;
+    }
+}
 @media only screen and (max-width : 460px){
     #gray{
         scale: 0.95;
