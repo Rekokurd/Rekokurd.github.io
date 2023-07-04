@@ -55,7 +55,9 @@
     font-size: 18px;
 }
 @media only screen and (max-width : 444px){
-    
+    #about{
+        max-width: 430px;
+    }
     
 }
 @media only screen and (max-width : 980px){
