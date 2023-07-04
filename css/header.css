@@ -262,6 +262,7 @@ header{
     header{
         max-width: 300px;
         border: 1px solid red;
+        overflow: hidden;
     }
     #logo{
         left: 100px;

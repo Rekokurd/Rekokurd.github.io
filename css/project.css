@@ -56,6 +56,7 @@
     #project{
         max-width: 300px;
         border: 1px solid red;
+        overflow: hidden;
     }
 }
 @media only screen and (max-width : 460px){
