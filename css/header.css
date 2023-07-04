@@ -211,13 +211,17 @@ header{
     .language{
         padding-left: 20px;
         padding-right: 20px;
-        height: 13px;
+        height: 10px;
+        padding-bottom: 9px;
+        text-align: center;
+        bottom: 1px;
     }
     #arabicl{
         border-radius: 0 4px 4px 0;
     }
     #kurdishl{
-        padding-right: 1px;
+        padding-right: 10px;
+        
     }
     #minu{
         margin: 0 auto;
