@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
   }
 body{
-    max-width:300px;
     margin: 0%;
     overflow-x: hidden;
     display: -webkit-box;

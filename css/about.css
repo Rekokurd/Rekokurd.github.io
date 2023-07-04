@@ -55,9 +55,8 @@
     font-size: 18px;
 }
 @media only screen and (max-width : 444px){
-    #about{
-        
-    }
+    
+    
 }
 @media only screen and (max-width : 980px){
     #about{
@@ -87,9 +86,7 @@
     }
 }
 @media only screen and (max-width : 570px){
-    #about{
-        max-width:300px;
-    }
+    
     
     #resume_link{
        position: absolute;
