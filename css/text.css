@@ -81,8 +81,10 @@ font-size: 30px;
       justify-content: center;
    }
    #test_top{
-    font-size: 20px;
-    right: 40px;
+    font-size: 30px;
+    right: 30px;
+    width: 350px;
+    text-align: center;
     font-weight: 100px;
     border: 1px solid red;
     position: relative;

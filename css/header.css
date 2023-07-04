@@ -270,7 +270,7 @@ header{
         max-width: 450px;
         margin-left: 0%;
         margin-right: 0;
-        left: -40px;
+        left: -30px;
         scale: 0.9;
         width: 500px;
     }
@@ -296,7 +296,8 @@ header{
 }
 @media only screen and (max-width : 404px){
     #minu{
-        left: -80px;
+        left: -50px;
+        scale: 0.8;
     }
 }
 /*
