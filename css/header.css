@@ -260,8 +260,8 @@ header{
 }
 @media only screen and (max-width : 444px){
     header{
-        max-width: 450px;
-        border: 1px solid red;
+        max-width: 430px;
+        border: 1px solid pink;
     }
     #logo{
         left: 100px;
