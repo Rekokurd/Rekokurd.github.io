@@ -259,7 +259,9 @@ header{
     }
 }
 @media only screen and (max-width : 444px){
-    
+    header{
+        max-width: 400px;
+    }
     #logo{
         left: 100px;
     }
