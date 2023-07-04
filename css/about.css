@@ -54,6 +54,12 @@
 #resume_link:hover{
     font-size: 18px;
 }
+@media only screen and (max-width : 444px){
+    #about{
+        max-width: 300px;
+        border: 1px solid red;
+    }
+}
 @media only screen and (max-width : 980px){
     #about{
         background-position: 550px -10px;

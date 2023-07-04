@@ -53,6 +53,12 @@ font-size: 30px;
     left: 200px;
 
 }
+@media only screen and (max-width : 444px){
+    #testio{
+        max-width: 300px;
+        border: 1px solid red;
+    }
+}
 @media only screen and (max-width : 924px){
     .test_div{
         margin-bottom: 30px;
