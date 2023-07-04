@@ -206,10 +206,7 @@ input:focus::placeholder {
 }
 @media only screen and (max-width : 444px){
     #contact{
-        max-width: 300px;
-        border: 1px solid red;
-        overflow: hidden;
-    }
+        
 }
 
 @media only screen and (max-width : 980px){

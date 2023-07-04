@@ -55,9 +55,7 @@ font-size: 30px;
 }
 @media only screen and (max-width : 444px){
     #testio{
-        max-width: 300px;
-        border: 1px solid red;
-        overflow: hidden;
+       
     }
 }
 @media only screen and (max-width : 924px){
